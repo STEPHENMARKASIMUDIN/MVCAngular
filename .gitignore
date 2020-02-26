@@ -1,0 +1,4 @@
+/packages
+/bin
+/Scripts/*.min.js
+.vs

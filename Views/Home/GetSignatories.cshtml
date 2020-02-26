@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetSignatories</title>
+</head>
+<body ng-app="Homeapp">
+    <div ng-controller="HomeController">
+        <table class="form-group">
+            <tr class="form-control">
+                <th>
+                    <label>Name</label>
+                </th>
+                <th>
+                    <label>Level</label>
+                </th>
+            </tr>
+            <tr ng-repeat="e in signatory" class="form-control">
+                <td>
+                    {{e.Name}}
+                </td>
+                <td>
+                    {{e.Level}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/AngularController/HomeAngular.js"></script>
